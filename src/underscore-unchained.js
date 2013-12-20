@@ -1,4 +1,5 @@
-'use strict';
+'use strict()';
+
 var _ = require('underscore');
 _.mixin({
 /* ## _.unchain(obj, magicPowers)
@@ -36,7 +37,7 @@ _.unchain(['a','bb','ccc'],{plainPrimitives:true})
                 .value();
         _(unames).each(function(underscoreFuncName) {
             map[underscoreFuncName] = _[underscoreFuncName];
-        })
+        });
         if (magicPowers && magicPowers.more)
             _.extend(map, magicPowers.more);
         return enhance(obj, map, magicPowers && magicPowers.plainPrimitives);
@@ -53,9 +54,9 @@ _.prometheus(Array);
 
  */
     prometheus: function(obj, magicPowers) {
-        return _.unchain(obj.prototype, magicPowers)
+        return _.unchain(obj.prototype, magicPowers);
     }
-})
+});
 
 function enhance(obj, funcsAndNames, plainPrimitives) {
     _.chain(funcsAndNames).pairs().each(function(pair) {
@@ -70,7 +71,7 @@ function enhance(obj, funcsAndNames, plainPrimitives) {
                 return enhance(new Object(result), funcsAndNames, plainPrimitives);
             }
         });
-    })
+    });
     return obj;
 }
 

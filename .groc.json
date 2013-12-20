@@ -1,6 +1,6 @@
 {
-  "glob": ["underscore-unchained.js", "README.md", "test/*.js"],
+  "glob": ["src/underscore-unchained.js", "README.md", "test/*.js"],
   "github": false,
   "repository-url": "https://github.com/Sigfried/underscore-underscore-unchained",
-  "index": "underscore-unchained.js"
+  "index": "src/underscore-unchained.js"
 }
