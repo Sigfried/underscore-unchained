@@ -1,4 +1,5 @@
 'use strict';
+var _ = require('underscore');
 _.mixin({
 /* ## _.unchain(obj, magicPowers)
 _enhance arrays and other objects with Underscore methods so you don't need 
@@ -72,3 +73,5 @@ function enhance(obj, funcsAndNames, plainPrimitives) {
     })
     return obj;
 }
+
+module.exports = _;
