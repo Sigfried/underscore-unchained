@@ -13,7 +13,7 @@ underscore-unchained
 
     _.prometheus(obj, magicPowers)
 
-*Defy the gods and bring the full power of Underscore to *ALL* your Arrays, Objects, or whatever.
+*Defy the gods and bring the full power of Underscore to _all_ your Arrays, Objects, or whatever.
 Also works with constructors of user-defined classes. Use at your own risk.*
 
     _.prometheus(Array);
