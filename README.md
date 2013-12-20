@@ -1,13 +1,13 @@
 underscore-unchained
 ====================
 
-## Use Underscore methods directly from objects or classes of objects, and there's no need for _.chain()
 
-* _.unchain(obj, magicPowers) *
+    _.unchain(obj, magicPowers)
 
-@param {Object} obj The Object to be enhanced, usually an array.
-@param {Object} [magicPowers]
+*Use Underscore methods directly from objects or classes of objects, and there's no need for _.chain()*
 
+    @param {Object} obj The Object to be enhanced, usually an array.
+    @param {Object} [magicPowers]
     @param {String[]} [magicPowers.include] Defaults to all the Underscore functions.
         Use an empty array if you don't want any Underscore functions.
     @param {String[]} [magicPowers.exclude] any Underscore functions you don't want.
@@ -27,9 +27,10 @@ underscore-unchained
         .range()
     => TypeError: Object 3 has no method 'range'
 
-* _.prometheus(obj, magicPowers) *
-_Defy the gods and bring the full power of Underscore to *ALL* your Arrays, Objects, or whatever.
-Also works with constructors of user-defined classes. Use at your own risk._
+    _.prometheus(obj, magicPowers)
+
+*Defy the gods and bring the full power of Underscore to *ALL* your Arrays, Objects, or whatever.
+Also works with constructors of user-defined classes. Use at your own risk.*
 
     _.prometheus(Array);
     ['a','bb','ccc'].pluck('length').last().range()
