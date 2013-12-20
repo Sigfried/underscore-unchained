@@ -17,8 +17,8 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/Users/sigfried/Sites/underscore-unchained/underscore-unchained.js",
-        "projectPath": "underscore-unchained.js",
+        "sourcePath": "/Users/sigfried/Sites/underscore-unchained/src/underscore-unchained.js",
+        "projectPath": "src/underscore-unchained.js",
         "targetPath": "index",
         "pageTitle": "index",
         "title": "index"
