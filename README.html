@@ -1,24 +1,9 @@
-<!DOCTYPE html><html lang="en"><head><title>README</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="README"><meta name="groc-project-path" content="README.md"><meta name="groc-github-url" content="https://github.com/Sigfried/underscore-underscore-unchained"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/Sigfried/underscore-underscore-unchained/blob/master/README.md">README.md</a></div></div><div id="document"><div class="segment"><div class="comments doc-section"><div class="wrapper"><h1 id="underscore-unchained">underscore-unchained</h1>
+<!DOCTYPE html><html lang="en"><head><title>README</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="README"><meta name="groc-project-path" content="README.md"><meta name="groc-github-url" content="https://github.com/Sigfried/underscore-underscore-unchained"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/Sigfried/underscore-underscore-unchained/blob/master/README.md">README.md</a></div></div><div id="document"><div class="segment"><div class="comments "><div class="wrapper"><h1 id="underscore-unchained">underscore-unchained</h1>
 
-<h2 id="use-underscore-methods-directly-from-objects-or-classes-of-objects-and-theres-no-need-for-chain">Use Underscore methods directly from objects or classes of objects, and there's no need for _.chain()</h2>
+<pre><code>_.unchain(obj, magicPowers)
+</code></pre>
 
-<h2 id="-unchainobj-magicpowers">_.unchain(obj, magicPowers)</h2>
-
-<p>Parameters:</p>
-
-<ul>
-<li><p><strong>obj must be an Object.</strong><br/>(The Object to be enhanced, usually an array.)</p></li>
-<li><p><strong>magicPowers is optional and must be an Object.</strong></p>
-
-<ul><li><p><strong>magicPowers.include is optional and must be an Array of Strings.</strong><br/>(Defaults to all the Underscore functions. Use an empty array if you don't want any Underscore functions.)</p></li>
-<li><p><strong>magicPowers.exclude is optional and must be an Array of Strings.</strong><br/>(any Underscore functions you don't want.)</p></li>
-<li><p><strong>magicPowers.more is optional and must be an Object.</strong><br/>(map of any other methodNames and functions you'd like thrown in.)</p></li>
-<li><p><strong>magicPowers.plainPrimitives is optional, must be an Object, and has a default value of false.</strong><br/>(if true, don't turn primitive data types into Objects for enhancement.)</p></li></ul></li>
-</ul>
-
-<p><strong>Returns an Object</strong><br/>(enhanced with methods which all return similarly enhanced results)</p>
-
-<p>Example:</p>
+<p><em>A mixin that lets you use Underscore methods directly from objects or classes of objects, and there's no need for _.chain()</em></p>
 
 <pre><code>_.unchain(['a','bb','ccc'])
     .pluck('length')
@@ -26,19 +11,11 @@
     .range()
 =&gt; [0, 1, 2]
 
-_.unchain(['a','bb','ccc'],{plainPrimitives:true})
-    .pluck('length')
-    .last()
-    .range()
-=&gt; TypeError: Object 3 has no method 'range'
+_.prometheus(obj, magicPowers)
 </code></pre>
 
-<h2 id="-prometheusobj-magicpowers">_.prometheus(obj, magicPowers)</h2>
-
-<p><em>Defy the gods and bring the full power of Underscore to *ALL* your Arrays, Objects, or whatever.
+<p><em>Defy the gods and bring the full power of Underscore to <strong>all</strong> your Arrays, Objects, or whatever.
 Also works with constructors of user-defined classes. Use at your own risk.</em></p>
-
-<p>Example:</p>
 
 <pre><code>_.prometheus(Array);
 ['a','bb','ccc'].pluck('length').last().range()

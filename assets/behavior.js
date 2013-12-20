@@ -63,65 +63,12 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
             "slug": "underscore-unchained",
             "isFileHeader": true
           },
-          "depth": 1,
-          "children": [
-            {
-              "type": "heading",
-              "data": {
-                "level": 2,
-                "title": "Use Underscore methods directly from objects or classes of objects, and there's no need for _.chain()",
-                "slug": "use-underscore-methods-directly-from-objects-or-classes-of-objects-and-theres-no-need-for-chain"
-              },
-              "depth": 2
-            }, {
-              "type": "heading",
-              "data": {
-                "level": 2,
-                "title": "_.unchain(obj, magicPowers)",
-                "slug": "-unchainobj-magicpowers"
-              },
-              "depth": 2
-            }, {
-              "type": "heading",
-              "data": {
-                "level": 2,
-                "title": "_.prometheus(obj, magicPowers)",
-                "slug": "-prometheusobj-magicpowers"
-              },
-              "depth": 2
-            }
-          ]
+          "depth": 1
         },
         "title": "underscore-unchained"
       },
       "depth": 1,
-      "outline": [
-        {
-          "type": "heading",
-          "data": {
-            "level": 2,
-            "title": "Use Underscore methods directly from objects or classes of objects, and there's no need for _.chain()",
-            "slug": "use-underscore-methods-directly-from-objects-or-classes-of-objects-and-theres-no-need-for-chain"
-          },
-          "depth": 2
-        }, {
-          "type": "heading",
-          "data": {
-            "level": 2,
-            "title": "_.unchain(obj, magicPowers)",
-            "slug": "-unchainobj-magicpowers"
-          },
-          "depth": 2
-        }, {
-          "type": "heading",
-          "data": {
-            "level": 2,
-            "title": "_.prometheus(obj, magicPowers)",
-            "slug": "-prometheusobj-magicpowers"
-          },
-          "depth": 2
-        }
-      ]
+      "outline": []
     }
   ];
 
