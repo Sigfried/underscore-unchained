@@ -3,7 +3,7 @@ underscore-unchained
 
     _.unchain(obj, magicPowers)
 
-*Use Underscore methods directly from objects or classes of objects, and there's no need for _.chain()*
+*A mixin that lets you use Underscore methods directly from objects or classes of objects, and there's no need for _.chain()*
 
     _.unchain(['a','bb','ccc'])
         .pluck('length')
