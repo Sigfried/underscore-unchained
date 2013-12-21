@@ -1,6 +1,7 @@
 'use strict()';
+if (typeof(require) !== "undefined") 
+    _ = require('underscore'); // otherwise assume it was included by html file
 
-var _ = require('underscore');
 _.mixin({
 /* ## _.unchain(obj, magicPowers)
 _enhance arrays and other objects with Underscore methods so you don't need 
@@ -74,5 +75,14 @@ function enhance(obj, funcsAndNames, plainPrimitives) {
     });
     return obj;
 }
-
-module.exports = _;
+if (typeof exports !== 'undefined') {   // not sure if this is all right
+    if (typeof module !== 'undefined' && module.exports) {
+        module.exports = _;
+    }
+    exports._ = _;
+} else if (typeof define === 'function' && define.amd) {
+    // Register as a named module with AMD.
+    define('_', [], function() {
+        return nester;
+    });
+}

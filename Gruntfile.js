@@ -3,6 +3,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     browserify: {
       './dist/underscore-unchained.js': ['./underscore-unchained.js']
+      //, options: { debug: true }
     },
     watch: {
       files: [ "./src/underscore-unchained.js","./README.md"],
