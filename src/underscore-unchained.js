@@ -56,6 +56,10 @@ _.prometheus(Array);
  */
     prometheus: function(obj, magicPowers) {
         return _.unchain(obj.prototype, magicPowers);
+    },
+    round: Math.round,
+    mapScalar: function(scalar, func) {
+        return func(scalar);
     }
 });
 
