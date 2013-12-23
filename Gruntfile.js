@@ -3,7 +3,10 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     browserify: {
       './dist/underscore-unchained.js': ['./underscore-unchained.js']
-      //, options: { debug: true }
+      , options: { 
+          debug: true,
+          transform: ['debowerify', 'decomponentify', 'deamdify', 'deglobalify'],
+      }
     },
     watch: {
       files: [ "./src/underscore-unchained.js","./README.md"],
@@ -20,6 +23,7 @@ module.exports = function(grunt) {
     },
     jshint: {
         all: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
+        , options: { laxcomma: true }
         //,environments: ['node']
     }
   });

@@ -1,0 +1,52 @@
+{
+  "name": "underscore-unchained",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Sigfried/underscore-unchained",
+  "authors": [
+    "(Sigfried Gold <sigfried@sigfried.org>)"
+  ],
+  "description": "Enhance arrays and other objects with Underscore methods so you don't need to mess with _.chain() and .value() every time you do two Underscore methods in sequence.",
+  "dependencies": {
+  },
+  "dependencies": {
+    "underscore": "1.4.4"
+  },
+  "devDependencies": {
+    "karma-script-launcher": "~0.1.0",
+    "karma-chrome-launcher": "~0.1.1",
+    "karma-html2js-preprocessor": "~0.1.0",
+    "karma-firefox-launcher": "~0.1.2",
+    "karma-jasmine": "~0.1.4",
+    "karma-coffee-preprocessor": "~0.1.1",
+    "karma-requirejs": "~0.2.0",
+    "karma-phantomjs-launcher": "~0.1.1",
+    "karma": "~0.10.8",
+    "grunt": "~0.4.2",
+    "browserify": "~3.12.0",
+    "grunt-browserify": "~1.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-groc": "~0.4.0",
+    "grunt-contrib-jshint": "~0.7.2"
+  },
+  "keywords": [
+    "underscore",
+    "syntactic",
+    "sugar",
+    "reckless",
+    "prometheus",
+    "titans",
+    "olympus",
+    "shelley",
+    "convenience",
+    "chain",
+    "unchain"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
