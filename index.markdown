@@ -1,18 +1,14 @@
 ---
 layout: page
-title: "index"
-title: "Underscore Unchained"
+title: "underscore-unchained"
 date: 2013-12-25 14:41
 comments: true
 sharing: true
 footer: true
 project: true
 reponame: treelike
-
 ---
 
-underscore-unchained
-====================
 
 [sigfried.github.io/underscore-unchained/](http://sigfried.github.io/underscore-unchained/)
 
