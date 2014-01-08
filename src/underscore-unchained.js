@@ -68,6 +68,7 @@ function enhance(obj, funcsAndNames, plainPrimitives, cloneFrozenVals) {
     try {
         _.chain(funcsAndNames).pairs().each(function(pair) {
             var methodName = pair[0], func = pair[1];
+            if (obj.hasOwnProperty(methodName)) return;
             Object.defineProperty(obj, methodName, {
                 value: function() {
                     try {
@@ -76,6 +77,16 @@ function enhance(obj, funcsAndNames, plainPrimitives, cloneFrozenVals) {
                         console.log("failed to apply " + methodName);
                         console.log(e.stack);
                         throw e;
+                    }
+                    if (result instanceof Object && result.constructor === obj.constructor) { // if result is same type as obj, just keep obj's methods
+                        _.chain(Object.getOwnPropertyNames(obj))
+                            .filter(function(d) { return typeof(obj[d]) === "function"})
+                            .each(function(p) {
+                                Object.defineProperty(result, p, {
+                                    value: obj[p]
+                                });
+                            });
+                        return result;
                     }
                     if (result instanceof Object)
                         return enhance(result, funcsAndNames, plainPrimitives, cloneFrozenVals);

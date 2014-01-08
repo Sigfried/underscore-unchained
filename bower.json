@@ -7,8 +7,7 @@
   ],
   "description": "Enhance arrays and other objects with Underscore methods so you don't need to mess with _.chain() and .value() every time you do two Underscore methods in sequence.",
   "dependencies": {
-  },
-  "dependencies": {
+    "1670507": "https://gist.github.com/1670507.git",
     "underscore": "1.4.4"
   },
   "keywords": [
