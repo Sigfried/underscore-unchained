@@ -9,20 +9,20 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: [ "./src/underscore-unchained.js","./README.md"],
+      files: [ "./js","./README.md"],
       tasks: [ 'browserify' ]
     },
     groc: {
         javascript: [
-            "src/*.js", "README.md"
+            "js", "README.md"
         ],
         options: {
         "out": "doc/",
-        "index": "src/underscore-unchained.js"
+        "index": "js"
         }
     },
     jshint: {
-        all: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
+        all: ['Gruntfile.js', '*.js', 'test/**/*.js']
         , options: { laxcomma: true }
         //,environments: ['node']
     }
