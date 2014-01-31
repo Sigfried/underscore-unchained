@@ -1,5 +1,6 @@
 {
   "name": "underscore-unchained",
+  "main": "bundle.js",
   "version": "0.1.1",
   "homepage": "https://github.com/Sigfried/underscore-unchained",
   "authors": [
